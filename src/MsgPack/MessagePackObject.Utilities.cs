@@ -815,7 +815,7 @@ namespace MsgPack
 									case UnicodeCategory.PrivateUse:
 									case UnicodeCategory.Surrogate:
 									{
-										buffer.Append( '\\' ).Append( 'u' ).Append( ( ( ushort ) c ).ToString( "X", CultureInfo.InvariantCulture ) );
+										buffer.Append( '\\' ).Append( 'u' ).Append( ( ( ushort ) c ).ToString( "X4", CultureInfo.InvariantCulture ) );
 										break;
 									}
 									default:
